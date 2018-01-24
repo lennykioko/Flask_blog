@@ -54,7 +54,7 @@ Flask_blog is a simple blogging web application built with Flask, Bootstrap and 
 * Python 3.6.4 (PEP8)
 
 ## Heroku link
-* 
+* https://flask-blog-app.herokuapp.com/
 
 ## Author:
 Lenny Kioko.

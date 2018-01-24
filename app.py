@@ -3,12 +3,15 @@ from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
+from flask.ext.heroku import Heroku
+
 app = Flask(__name__)
 
 # set up database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/blog'
 
 db = SQLAlchemy(app)
+heroku = Heroku(app)
 
 
 class Blogpost(db.Model):

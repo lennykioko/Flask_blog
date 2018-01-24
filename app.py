@@ -10,8 +10,8 @@ app = Flask(__name__)
 # set up local database
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/blog'
 
-db = SQLAlchemy(app)
 heroku = Heroku(app)
+db = SQLAlchemy(app)
 
 
 class Blogpost(db.Model):
